@@ -20,6 +20,7 @@ header {
     align-items: center;
     transition: 0.5s;
 }
+
 p {
     font-weight: 300;
     color: #111;
@@ -34,7 +35,7 @@ p {
     align-items: center;
     background: linear-gradient(to bottom, rgba(33, 94, 134, 0.8), rgba(255, 0, 0, 0)), url('/assets/media/imgs/seccion-inicio.jpg');
     background-size: cover;
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 .inicio .contenedor-logoG {
@@ -48,6 +49,7 @@ p {
     padding: 10px 100px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
+
 .logo {
     color: #fff;
     padding-bottom: 100px;
@@ -67,10 +69,12 @@ p {
     position: relative;
     display: flex;
 }
+
 .links-menu li {
     list-style: none;
     margin-left: 30px;
 }
+
 .links-menu li a {
     font-size: 18px;
     text-align: none;
@@ -98,6 +102,7 @@ section {
     font-size: 2em;
     font-weight: 300;
 }
+
 .titulo {
     width: 100%;
     display: flex;
@@ -114,6 +119,7 @@ section {
     display: flex;
     justify-content: space-between;
 }
+
 .nosotros .article-nosotros {
     position: relative;
     width: 48%;
@@ -143,9 +149,9 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 40px;
-  
+
 }
-  
+
 .card {
     width: 340px;
     margin: 15px;
@@ -156,21 +162,21 @@ section {
     align-items: center;
     flex-direction: column;
 }
-  
+
 .card-text {
     font-style: italic;
 }
-  
-.servicios .image-card{
+
+.servicios .image-card {
     position: relative;
     width: 150px;
     height: 150px;
     margin-bottom: 20px;
     border-radius: 50%;
     overflow: hidden;
-  
+
 }
- 
+
 .image-card img {
     position: absolute;
     top: 0;
@@ -184,4 +190,176 @@ section {
 .servicios {
     background: url('/static/img/seccion-servicio.jpg');
     background-size: cover;
+}
+
+/* CONTACTO-FORMULARIO */
+#title-form {
+    text-align: center;
+    margin-top: 2%;
+    color: #111;
+    font-size: 1em;
+
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('/static/img/seccion-servicio.jpg');
+    background-size: cover;
+}
+
+#form-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#form-contacto input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#button {
+    max-width: 100px;
+    width: 100%;
+    background-color: #2e2727;
+    color: #fff;
+    padding: 10px 15px;
+    border: palevioletred;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #ff0157;
+}
+
+@media screen and (max-width: 600px) {
+    #form-contacto {
+        max-width: 90%;
+    }
+
+    #form-contacto input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+/* FOOTER */
+footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons a {
+    display: inline-block;
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+
+.social-icons i:hover {
+    color: #ff0157;
+}
+
+@media (max-width: 991px) {
+
+    header,
+    .sticky {
+        padding: 15px 20px;
+    }
+
+    .links-menu {
+        display: none;
+    }
+
+    .links-menu.active {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    .links-menu li {
+        margin-left: 0;
+    }
+
+    .links-menu li a {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('/assets/icons/menu.png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active {
+        background: url('/assets/icons/close.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .sticky .menuToggle {
+        filter: invert(1);
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .nosotros {
+        flex-direction: column;
+    }
+
+    .nosotros .article-nosotros {
+        position: relative;
+        width: 100%;
+    }
+
+    .nosotros .article-nosotros .img-nosotros {
+
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .servicios .content {
+        width: 340px;
+        margin: 10px;
+        padding: 20px;
+    }
+
 }

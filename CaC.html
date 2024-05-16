@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./static/css/form.css">
+    <link rel="stylesheet" href="static/css/footer_header.css">
+</head>
+<body>
+    <header class="en-linea-header">
+        <div><img id="logo" src="./static/img/icon.png" alt="logo"></div>
+      
+        <nav class="en-linea">
+              <a class="hipervinc" href="../index.html">Inicio</a>
+              <a class="hipervinc" href="./servicios.html">Servicios</a>
+              <a class="hipervinc" href="./flota.html">Nuestra flota</a>
+              <a class="hipervinc" href="./formulario.html">Contacto</a>
+          </nav>
+    </header>
+    <section class="contacto">
+        <div id="title-form">
+            <h1>Contactate con nosotros</h1>
+            <p>Ingresa tus datos, hace tu consulta y en breve te responderemos</p>
+        </div>
+            <form action="" id="form-contacto" onsubmit="return validardatos()">
+            
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ej. Martín">
+            
+            <br>
+            
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido"placeholder="Ej. Otero">
+            
+            <br>
+            
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="1176532244">
+            
+            <br>
+            
+                <label for="mail">E-mail</label>
+                <input type="email" name="mail" id="mail" placeholder="example@gmail.com">
+            
+            <br> 
+                
+                    <label for="comentario">Comentarios y Preguntas</label> <br>
+                    <textarea name="comentario" id="comentario" cols="25" rows="8"></textarea>
+                
+                <br>
+                
+                <div id="error"></div>
+
+                <input type="submit" id="button"></input>
+                
+            </form>
+    </section>
+
+    <footer>    
+        <p>
+            &copy; 2024 Catalina Transporte S.A.
+        </p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i id="fb"></i></a>
+            <a href="#" target="_blank"><i id="twt"></i></a>
+            <a href="#" target="_blank"><i id="ig"></i></a>
+        </div>
+        <p>&copy;Victor   &copy;Catalina   &copy;Santiago</p>
+    </footer>
+
+
+    <script src="./static/js/form.js"></script>
+</body>
+</html> 

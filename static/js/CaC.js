@@ -1,5 +1,14 @@
-function validardatos() {
+//header
+window.addEventListener('scroll', function(){
+    let header = document.querySelector('header');
+    header.classList.toggle("sticky", window.scrollY > 0);
 
+    let logopequeño = document.querySelector('.mini-logo');
+    logopequeño.style.display = window.scrollY > 0 ? 'block' : 'none';
+});
+
+//contacto. hecho por cata
+function validardatos() {
     let nombre = document.getElementById("nombre").value;
     let apellido = document.getElementById("apellido").value;
     let telefono = document.getElementById("telefono").value;

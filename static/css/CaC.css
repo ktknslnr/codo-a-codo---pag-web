@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swp');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 * {
     margin: 0;
@@ -42,7 +42,6 @@ p {
     max-width: 900px;
     text-align: center;
 }
-
 
 .sticky {
     background: #fff;
@@ -90,7 +89,6 @@ p {
 
 .sticky .links-menu li a:hover {
     color: #ff0157;
-
 }
 
 section {
@@ -123,6 +121,7 @@ section {
 .nosotros .article-nosotros {
     position: relative;
     width: 48%;
+    font-size:20px;
 }
 
 .nosotros .article-nosotros .img-nosotros {
@@ -138,6 +137,131 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Media Queries */
+
+/* Mobile */
+@media (max-width: 600px) {
+    header {
+        padding: 20px 40px;
+    }
+    
+    .links-menu {
+        display: none;
+    }
+    
+    .menuToggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .inicio {
+        padding: 20px;
+        text-align: center;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .nosotros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros .article-nosotros {
+        width: 100%;
+    }
+
+    .nosotros .article-nosotros .img-nosotros {
+        height: 400px; 
+    }
+
+    .servicios .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicios .card {
+        margin: 1rem 0;
+        width: 90%;
+    }
+
+    .contacto form {
+        width: 90%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+    header {
+        padding: 30px 50px;
+    }
+
+    .inicio {
+        padding: 30px;
+        text-align: center;
+    }
+
+    section {
+        padding: 70px 30px;
+    }
+
+    .nosotros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros .article-nosotros {
+        width: 100%;
+    }
+
+    .nosotros .article-nosotros .img-nosotros {
+        height: 500px; 
+    }
+
+    .servicios .card {
+        flex: 1 1 45%;
+        margin: 1rem;
+    }
+
+    .contacto form {
+        width: 80%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 901px) {
+    header {
+        padding: 40px 100px;
+    }
+
+    .inicio {
+        padding: 50px;
+        text-align: left;
+    }
+
+    section {
+        padding: 100px;
+    }
+
+    .nosotros .article-nosotros {
+        width: 48%;
+    }
+
+    .nosotros .article-nosotros .img-nosotros {
+        height: 600px; /* Aumenta el tamaño de la imagen */
+    }
+
+    .servicios .card {
+        flex: 1 1 30%;
+        margin: 1.5rem;
+    }
+
+    .contacto form {
+        width: 60%;
+    }
 }
 
 /* SECCION SERVICIOS */
@@ -403,3 +527,5 @@ footer {
     }
 
 }
+
+

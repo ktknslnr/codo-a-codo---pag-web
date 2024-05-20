@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>CATALINA SERVICIOS</title>
     <link rel="stylesheet" href="./static/css/CaC.css">
+    <link rel="icon" href="./assets/icons/pesta+¦a.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <img class="mini-logo" src="/static/img/logo-prin.png" alt="">
-        <div class="menuToggle" onclick="toggleMenu();"></div>
         <nav>
             <ul class="links-menu">
                 <li><a href="#inicio" onclick="toggleMenu();">Inicio</a></li>
@@ -25,9 +25,11 @@
     <!-- SECCION INICIO -->
     <section class="inicio" id="inicio">
         <article class="contenedor-logoG">
-            <img class="logoG" src="/static/img/logo-prin.png" alt="">
+            <img class="logoG" src="/static/img/logo-prin.png" alt="logo">
+            
         </article>
     </section>
+       
     <!-- SECCION NOSOTROS -->
     <section class="nosotros" id="nosotros">
         <article class="article-nosotros">
@@ -49,7 +51,7 @@
         </article>
         <article class="article-nosotros">
             <div class="img-nosotros">
-                <img src="/static/img/nosotros.jpg" alt="">
+                <img src="/static/img/nosotros.jpg" alt="nosotros">
             </div>
         </article>
     </section>
@@ -192,7 +194,7 @@
                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7811.137637814256!2d-58.36159461748099!3d-34.59963947022864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d9c2d70389%3A0xe7b5e9ee316678f!2sPuerto%20Madero%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1714779870751!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             
-            
+            <!-- ANIMACION DE TEXTO(REINICIAR LA PAGINA PARA VER EL EFECTO) -->
             <div class="container">
                <h3 class="animated-text">Nos encontramos en la zona de puerto madero! a 3 cuadras del puente de la mujer <br> <strong>Calle falsa 123</strong></h3>
            </div>
@@ -209,7 +211,7 @@
             <h1>Contactate con nosotros</h1>
             <p>Ingresa tus datos, hace tu consulta y en breve te responderemos</p>
         </div>
-        <form action="" id="form-contacto" onsubmit="return validardatos()">
+        <form action="https://formspree.io/f/mzbnaplk" method="POST" id="form-contacto" onsubmit="return validardatos()">
 
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre" placeholder="Ej. Martín">
@@ -238,7 +240,7 @@
 
             <div id="error"></div>
 
-            <input type="submit" id="button"></input>
+            <input type="submit" id="button">
 
         </form>
     </section>
